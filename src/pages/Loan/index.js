@@ -3,14 +3,22 @@ import NavBar1 from "components/Navbar1.jsx";
 import { Img, Text, Line, Input, Button, List } from "components";
 import { CloseSVG } from "../../assets/images/index.js";
 import { useNavigate } from "react-router-dom";
-
+import { useState, useEffect } from "react";
 const LoanPage = () => {
-  const navigate = useNavigate();
-
+  const navigate = useNavigate()
   const [inputvalue, setInputvalue] = React.useState("");
+  const [onLine,setOnline] = useState(navigator.onLine) 
+  useEffect(()=>{
+    console.log(onLine)
+    const handleStatusChange = () =>{
+      setOnline(navigator.onLine)
+      console.log(onLine)
+    }
+    window.addEventListener('online',handleStatusChange)
+    window.addEventListener('offline',handleStatusChange)
+   },[onLine])
 
-  return (
-    <>
+  return ( <>{onLine?(<>
     <NavBar1 />
       <div className="bg-gray_100 flex md:flex-col sm:flex-col flex-row font-inter md:gap-[20px] sm:gap-[20px] items-start mx-[auto] w-[100%]">
         <aside className="md:hidden sm:hidden md:pl-[20px] sm:pl-[20px] md:pr-[20px] sm:pr-[20px] w-[18%]">
@@ -766,7 +774,8 @@ const LoanPage = () => {
           </div>
         </div>
       </div>
-    </>
+    </>):(<></>)}</>
+    
   );
 };
 

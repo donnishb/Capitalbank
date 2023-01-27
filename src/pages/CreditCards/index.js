@@ -1,12 +1,21 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Img, Text, Line, Input, Button } from "components";
 import { CloseSVG } from "../../assets/images/index.js";
 import { useNavigate } from "react-router-dom";
 import NavBar1 from "components/Navbar1.jsx";
 
 const CreditCardsPage = () => {
-
+  const [onLine,setOnline] = useState(navigator.onLine) 
+  useEffect(()=>{
+   console.log(onLine)
+   const handleStatusChange = () =>{
+     setOnline(navigator.onLine)
+     console.log(onLine)
+   }
+   window.addEventListener('online',handleStatusChange)
+   window.addEventListener('offline',handleStatusChange)
+  },[onLine])
   const navigate = useNavigate();
 
   const [vall,setVall] = useState({
@@ -34,8 +43,7 @@ const CreditCardsPage = () => {
    
   const [inputvalue, setInputvalue] = React.useState("");
 
-  return (
-    <>
+  return (   <>{onLine?(<>
     <NavBar1 />
       <div className="bg-gray_100 flex md:flex-col sm:flex-col flex-row font-inter md:gap-[20px] sm:gap-[20px] items-start mx-[auto] pb-[30px] w-[100%]">
         <aside className="md:hidden sm:hidden md:pl-[20px] sm:pl-[20px] md:pr-[20px] sm:pr-[20px] w-[18%]">
@@ -374,7 +382,8 @@ const CreditCardsPage = () => {
           </div>
         </div>
       </div>
-    </>
+    </>):(<>Offline</>)}</>
+    
   );
 };
 

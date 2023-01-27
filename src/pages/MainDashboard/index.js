@@ -3,13 +3,21 @@ import { Img, Line, Text, Input, Button, List, Stack } from "components";
 import { CloseSVG } from "../../assets/images/index.js";
 import { useNavigate } from "react-router-dom";
 import NavBar1 from "components/Navbar1.jsx";
-
+import { useState , useEffect } from "react";
 const MainDashboardPage = () => {
   const navigate = useNavigate();
   const [inputvalue, setInputvalue] = React.useState("");
-
-  return (
-    <>
+  const [onLine,setOnline] = useState(navigator.onLine) 
+  useEffect(()=>{
+    console.log(onLine)
+    const handleStatusChange = () =>{
+      setOnline(navigator.onLine)
+      console.log(onLine)
+    }
+    window.addEventListener('online',handleStatusChange)
+    window.addEventListener('offline',handleStatusChange)
+   },[onLine])
+  return ( <>{onLine?(<>
     <NavBar1 />
       <div className="bg-gray_100 flex md:flex-col sm:flex-col flex-row font-inter md:gap-[20px] sm:gap-[20px] items-start mx-[auto] pb-[30px] w-[100%]">
         <aside className="md:hidden sm:hidden md:pl-[20px] sm:pl-[20px] md:pr-[20px] sm:pr-[20px] w-[18%]">
@@ -251,7 +259,7 @@ const MainDashboardPage = () => {
                             </Text>
                           </div>
                           <Img
-                            src="images/img_chipcar.png"
+                            src="images/img_chipcard.png"
                             className="h-[34px] md:h-[auto] sm:h-[auto] object-cover w-[34px]"
                             onError={i=>i.target.style.display='none'}
                             
@@ -839,7 +847,8 @@ const MainDashboardPage = () => {
           </div>
         </div>
       </div>
-    </>
+    </>):(<>Offline</>)}</>
+    
   );
 };
 

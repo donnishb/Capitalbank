@@ -3,12 +3,21 @@ import NavBar1 from "components/Navbar1";
 import { Img, Text, List,} from "components";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-
+import { useState,useEffect } from "react";
 const CreditCardsPage = () => {
   const navigate = useNavigate();
+  const [onLine,setOnline] = useState(navigator.onLine) 
 
-  return (
-    <>
+  useEffect(()=>{
+    console.log(onLine)
+    const handleStatusChange = () =>{
+      setOnline(navigator.onLine)
+      console.log(onLine)
+    }
+    window.addEventListener('online',handleStatusChange)
+    window.addEventListener('offline',handleStatusChange)
+   },[onLine])
+  return (  <>{onLine?( <>
     <NavBar1 />
       <div className="bg-gray_100 flex md:flex-col sm:flex-col flex-row font-inter md:gap-[20px] sm:gap-[20px] items-start mx-[auto] pb-[30px] w-[100%]">
         <aside className="md:hidden sm:hidden md:pl-[20px] sm:pl-[20px] md:pr-[20px] sm:pr-[20px] w-[18%]">
@@ -17,7 +26,7 @@ const CreditCardsPage = () => {
               <Img
                 src="images/img_logo_indigo_600.png"
                 className="h-[40px] md:h-[auto] sm:h-[auto] object-cover w-[40px]"
-                alt="LOGO"
+                onError={i=>i.target.style.display='none'}
               />
               <Text
                
@@ -41,7 +50,7 @@ const CreditCardsPage = () => {
                   <Img
                     src="images/img_service1.svg"
                     className="h-[25px] w-[25px]"
-                    alt="serviceOne"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     style={{color:"red"}}
@@ -67,10 +76,7 @@ const CreditCardsPage = () => {
             >
               Try again after resolve
             </Text>
-            
-            
-            
-            
+  
           </div>
           <div className="flex flex-col items-center justify-start md:w-[100%] sm:w-[100%] w-[94%]">
           <div className="flex md:flex-col sm:flex-col flex-row md:gap-[30px] sm:gap-[30px] items-center justify-between mt-[24px] w-[100%]">
@@ -112,7 +118,7 @@ const CreditCardsPage = () => {
                   <Img
                     src="images/img_group346chart.svg"
                     className="h-[186px] mt-[2px] w-[64%]"
-                    alt="Group346Chart"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <List
                     className="flex-col gap-[14px] grid items-center w-[86%]"
@@ -167,7 +173,8 @@ const CreditCardsPage = () => {
           </div>
         </div>
       </div>
-    </>
+    </>):(<>Offline</>)}</>
+   
   );
 };
 
