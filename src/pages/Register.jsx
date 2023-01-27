@@ -33,7 +33,7 @@ function Register() {
     }
     
     return ( <div>
-<section class="bg-gray-50 min-h-screen flex items-center justify-center" style={{backgroundImage:"url(images/bank.jpeg)", backgroundSize:"contain"}}>
+<section class="bg-gray-50 min-h-screen flex items-center justify-center" >
 <div class="bg-gray-100 flex rounded-2xl shadow-lg max-w-3xl p-5 items-center">
     <div class="md:w-1/2 px-8 md:px-16 rounded-2xl shadow-lg" >
       <h2 class="font-bold text-2xl text-[#002D74]"><Link to="/">CAPITAL BANK</Link></h2>

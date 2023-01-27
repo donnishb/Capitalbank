@@ -23,7 +23,7 @@ function Homepage() {
       }
     }
     return ( <div>
-       <section class="bg-gray-50 min-h-screen flex items-center justify-center" style={{backgroundImage:"url(images/bank.jpeg)", backgroundSize:"contain"}}>
+       <section class="bg-gray-50 min-h-screen flex items-center justify-center" >
 
   <div class="bg-gray-100 flex rounded-2xl shadow-lg max-w-3xl p-5 items-center">
     
