@@ -19,7 +19,7 @@ const LoanPage = () => {
               <Img
                 src="images/img_logo_indigo_600.png"
                 className="h-[40px] md:h-[auto] sm:h-[auto] object-cover w-[40px]"
-                alt="LOGO"
+                onError={i=>i.target.style.display='none'}
               />
               <Text
                 className="font-bold ml-[4px] text-indigo_600 text-left w-[auto]"
@@ -38,7 +38,7 @@ const LoanPage = () => {
                   <Img
                     src="images/img_home_25X25.svg"
                     className="h-[25px] w-[25px]"
-                    alt="home"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -57,7 +57,7 @@ const LoanPage = () => {
                   <Img
                     src="images/img_glyph.svg"
                     className="h-[25px] w-[25px]"
-                    alt="Glyph"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -76,7 +76,7 @@ const LoanPage = () => {
                   <Img
                     src="images/img_user.svg"
                     className="h-[25px] w-[25px]"
-                    alt="user"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -95,7 +95,7 @@ const LoanPage = () => {
                   <Img
                     src="images/img_map.svg"
                     className="h-[25px] w-[25px]"
-                    alt="map"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -115,7 +115,7 @@ const LoanPage = () => {
                   <Img
                     src="images/img_file.svg"
                     className="h-[25px] w-[25px]"
-                    alt="file"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -133,7 +133,7 @@ const LoanPage = () => {
                   <Img
                     src="images/img_question_25X25.svg"
                     className="h-[25px] w-[25px]"
-                    alt="question"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-indigo_600 text-left w-[auto]"
@@ -153,7 +153,7 @@ const LoanPage = () => {
                   <Img
                     src="images/img_settings.svg"
                     className="h-[25px] w-[25px]"
-                    alt="settings"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -215,11 +215,7 @@ const LoanPage = () => {
               
              Logout
             </Button>
-            <Img
-              src="images/img_ellipse1.png"
-              className="h-[60px] md:h-[auto] sm:h-[auto] md:ml-[0] sm:ml-[0] ml-[35px] rounded-radius50 w-[60px]"
-              alt="EllipseOne"
-            />
+            
           </div>
           <div className="flex flex-col gap-[24px] items-center justify-start md:w-[100%] sm:w-[100%] w-[94%]">
             <List
@@ -236,7 +232,7 @@ const LoanPage = () => {
                     <Img
                       src="images/img_user_70X70.svg"
                       className="h-[30px] w-[30px]"
-                      alt="user One"
+                      onError={i=>i.target.style.display='none'}
                     />
                   </Button>
                   <div className="flex flex-col gap-[8px] items-start justify-start w-[59%]">
@@ -266,7 +262,7 @@ const LoanPage = () => {
                     <Img
                       src="images/img_bag.svg"
                       className="h-[30px] w-[30px]"
-                      alt="bag"
+                      onError={i=>i.target.style.display='none'}
                     />
                   </Button>
                   <div className="flex flex-col gap-[8px] items-start justify-start w-[61%]">
@@ -296,7 +292,7 @@ const LoanPage = () => {
                     <Img
                       src="images/img_graph1.svg"
                       className="h-[30px] w-[30px]"
-                      alt="graphOne"
+                      onError={i=>i.target.style.display='none'}
                     />
                   </Button>
                   <div className="flex flex-col gap-[8px] items-start justify-start w-[60%]">
@@ -326,7 +322,7 @@ const LoanPage = () => {
                     <Img
                       src="images/img_airplane.svg"
                       className="h-[30px] w-[30px]"
-                      alt="airplane"
+                      onError={i=>i.target.style.display='none'}
                     />
                   </Button>
                   <div className="flex flex-col gap-[8px] items-start justify-start w-[63%]">

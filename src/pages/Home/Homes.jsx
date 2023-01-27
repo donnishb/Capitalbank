@@ -16,7 +16,7 @@ function Homes() {
                 <Img
                   src="images/img_logo_indigo_600.png"
                   className="h-[40px] md:h-[auto] sm:h-[auto] object-cover w-[40px]"
-                  alt="LOGO"
+                  onError={i=>i.target.style.display='none'}
                 />
                 <Text
                   className="font-bold ml-[4px] text-indigo_600 text-left w-[auto]"
@@ -54,7 +54,7 @@ function Homes() {
                   <Img
                     src="images/img_call.svg"
                     className="h-[25px] w-[25px]"
-                    alt="call"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-indigo_600 text-left w-[auto]"
@@ -74,7 +74,7 @@ function Homes() {
                   <Img
                     src="images/img_signal.svg"
                     className="h-[25px] w-[25px]"
-                    alt="settings"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -133,7 +133,7 @@ function Homes() {
               <Img
                 src="images/img_user_70X70.svg"
                 className="h-[60px] md:h-[auto] sm:h-[auto] md:ml-[0] sm:ml-[0] ml-[35px] rounded-radius50 w-[60px]"
-                alt="EllipseOne"
+                onError={i=>i.target.style.display='none'}
               />
             </div>
             <div className="flex flex-col gap-[24px] items-center justify-start md:w-[100%] sm:w-[100%] w-[94%]">
@@ -151,7 +151,7 @@ function Homes() {
                       <Img
                         src="images/img_location.svg"
                         className="h-[30px] w-[30px]"
-                        alt="location"
+                        onError={i=>i.target.style.display='none'}
                       />
                     </Button>
                     <div className="flex flex-col gap-[8px] items-start justify-start w-[64%]">
@@ -185,7 +185,7 @@ function Homes() {
                       <Img
                         src="images/img_bag_70X70.svg"
                         className="h-[30px] w-[30px]"
-                        alt="bag"
+                        onError={i=>i.target.style.display='none'}
                       />
                     </Button>
                     <div className="flex flex-col gap-[8px] items-start justify-start w-[60%]">
@@ -215,7 +215,7 @@ function Homes() {
                       <Img
                         src="images/img_checkmark.svg"
                         className="h-[30px] w-[30px]"
-                        alt="checkmark"
+                        onError={i=>i.target.style.display='none'}
                       />
                     </Button>
                     <div className="flex flex-col gap-[8px] items-start justify-start w-[61%]">
@@ -259,7 +259,7 @@ function Homes() {
                       <Img
                         src="images/img_bag.svg"
                         className="h-[25px] w-[25px]"
-                        alt="bag One"
+                        onError={i=>i.target.style.display='none'}
                       />
                     </Button>
                     <div className="flex flex-col gap-[7px] items-start justify-start md:ml-[0] sm:ml-[0] ml-[20px] md:w-[100%] sm:w-[100%] w-[16%]">
@@ -312,7 +312,7 @@ Allows you to easily deposit and withdraw money for daily transactions.
                       size="lgIcn"
                       variant="icbFillGray102"
                     >
-                      <Img src="images/img_graph1.svg" className="" alt="Group" />
+                      <Img src="images/img_graph1.svg" className="" onError={i=>i.target.style.display='none'}/>
                     </Button>
                     <div className="flex flex-col gap-[7px] items-start justify-start md:ml-[0] sm:ml-[0] ml-[20px] md:w-[100%] sm:w-[100%] w-[16%]">
                       <Text
@@ -367,7 +367,7 @@ Allows you to easily deposit and withdraw money for daily transactions.
                       <Img
                         src="images/img_user_70X70.svg"
                         className="h-[25px] w-[25px]"
-                        alt="user One"
+                        onError={i=>i.target.style.display='none'}
                       />
                     </Button>
                     <div className="flex flex-col gap-[7px] items-start justify-start md:ml-[0] sm:ml-[0] ml-[20px] md:w-[100%] sm:w-[100%] w-[17%]">
@@ -423,7 +423,7 @@ Allows you to easily deposit and withdraw money for daily transactions.
                       <Img
                         src="images/img_checkmark_60X60.svg"
                         className="h-[25px] w-[25px]"
-                        alt="checkmark One"
+                        onError={i=>i.target.style.display='none'}
                       />
                     </Button>
                     <div className="flex flex-col gap-[7px] items-start justify-start md:ml-[0] sm:ml-[0] ml-[20px] md:w-[100%] sm:w-[100%] w-[16%]">
@@ -479,7 +479,7 @@ Allows you to easily deposit and withdraw money for daily transactions.
                       <Img
                         src="images/img_question_60X60.svg"
                         className="h-[25px] w-[25px]"
-                        alt="question Two"
+                        onError={i=>i.target.style.display='none'}
                       />
                     </Button>
                     <div className="flex flex-col gap-[7px] items-start justify-start md:ml-[0] sm:ml-[0] ml-[20px] md:w-[100%] sm:w-[100%] w-[16%]">

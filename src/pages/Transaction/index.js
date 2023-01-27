@@ -21,7 +21,7 @@ const TransactionPage = () => {
               <Img
                 src="images/img_logo_indigo_600.png"
                 className="h-[40px] md:h-[auto] sm:h-[auto] object-cover w-[40px]"
-                alt="LOGO"
+                onError={i=>i.target.style.display='none'}
               />
               <Text
                 className="font-bold ml-[4px] text-indigo_600 text-left w-[auto]"
@@ -40,7 +40,7 @@ const TransactionPage = () => {
                   <Img
                     src="images/img_home_25X25.svg"
                     className="h-[25px] w-[25px]"
-                    alt="home"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -57,7 +57,7 @@ const TransactionPage = () => {
                   <Img
                     src="images/img_file_25X25.svg"
                     className="h-[25px] w-[25px]"
-                    alt="file"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-indigo_600 text-left w-[auto]"
@@ -76,7 +76,7 @@ const TransactionPage = () => {
                   <Img
                     src="images/img_user.svg"
                     className="h-[25px] w-[25px]"
-                    alt="user"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -95,7 +95,7 @@ const TransactionPage = () => {
                   <Img
                     src="images/img_map.svg"
                     className="h-[25px] w-[25px]"
-                    alt="map"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -117,7 +117,7 @@ const TransactionPage = () => {
                   <Img
                     src="images/img_file.svg"
                     className="h-[25px] w-[25px]"
-                    alt="file One"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -136,7 +136,7 @@ const TransactionPage = () => {
                   <Img
                     src="images/img_question.svg"
                     className="h-[25px] w-[25px]"
-                    alt="question"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -156,7 +156,7 @@ const TransactionPage = () => {
                   <Img
                     src="images/img_settings.svg"
                     className="h-[25px] w-[25px]"
-                    alt="settings"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -219,11 +219,7 @@ const TransactionPage = () => {
               
              Logout
             </Button>
-            <Img
-              src="images/img_ellipse1.png"
-              className="h-[60px] md:h-[auto] sm:h-[auto] md:ml-[0] sm:ml-[0] ml-[35px] rounded-radius50 w-[60px]"
-              alt="EllipseOne"
-            />
+            
           </div>
           <div className="flex flex-col gap-[24px] items-center justify-start md:w-[100%] sm:w-[100%] w-[94%]">
             <div className="flex md:flex-col sm:flex-col flex-row md:gap-[30px] sm:gap-[30px] items-center justify-between w-[100%]">
@@ -261,7 +257,7 @@ const TransactionPage = () => {
                           <Img
                             src="images/img_chipcard.png"
                             className="h-[34px] md:h-[auto] sm:h-[auto] object-cover w-[34px]"
-                            alt="ChipCard"
+                            onError={i=>i.target.style.display='none'}
                           />
                         </div>
                         <div className="flex flex-row gap-[59px] items-center justify-start md:ml-[0] sm:ml-[0] ml-[2px] md:w-[100%] sm:w-[100%] w-[76%]">
@@ -304,7 +300,7 @@ const TransactionPage = () => {
                           <Img
                             src="images/img_contrast.svg"
                             className="ml-[35px] my-[auto]"
-                            alt="contrast"
+                            onError={i=>i.target.style.display='none'}
                           />
                         }
                         shape="CustomBorderBL25"
@@ -484,7 +480,7 @@ const TransactionPage = () => {
                               <Img
                                 src="images/img_arrow.svg"
                                 className=""
-                                alt="Arrow"
+                                onError={i=>i.target.style.display='none'}
                               />
                             </Button>
                             <Text
@@ -537,7 +533,7 @@ const TransactionPage = () => {
                               <Img
                                 src="images/img_arrow_green_600.svg"
                                 className=""
-                                alt="Arrow One"
+                                onError={i=>i.target.style.display='none'}
                               />
                             </Button>
                             <Text
@@ -590,7 +586,7 @@ const TransactionPage = () => {
                               <Img
                                 src="images/img_arrow.svg"
                                 className=""
-                                alt="Arrow Two"
+                                onError={i=>i.target.style.display='none'}
                               />
                             </Button>
                             <Text
@@ -643,7 +639,7 @@ const TransactionPage = () => {
                               <Img
                                 src="images/img_arrow.svg"
                                 className=""
-                                alt="Arrow Three"
+                                onError={i=>i.target.style.display='none'}
                               />
                             </Button>
                             <Text
@@ -697,7 +693,7 @@ const TransactionPage = () => {
                                 <Img
                                   src="images/img_arrow_green_600.svg"
                                   className=""
-                                  alt="Arrow Four"
+                                  onError={i=>i.target.style.display='none'}
                                 />
                               </Button>
                               <Text

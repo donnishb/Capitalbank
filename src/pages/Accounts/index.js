@@ -20,7 +20,7 @@ const AccountsPage = () => {
               <Img
                 src="images/img_logo_indigo_600.png"
                 className="h-[40px] md:h-[auto] sm:h-[auto] object-cover w-[40px]"
-                alt="LOGO"
+                onError={i=>i.target.style.display='none'}
               />
               <Text
                 className="font-bold ml-[4px] text-indigo_600 text-left w-[auto]"
@@ -39,7 +39,7 @@ const AccountsPage = () => {
                   <Img
                     src="images/img_home_25X25.svg"
                     className="h-[25px] w-[25px]"
-                    alt="home"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -58,7 +58,7 @@ const AccountsPage = () => {
                   <Img
                     src="images/img_glyph.svg"
                     className="h-[25px] w-[25px]"
-                    alt="Glyph"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -75,7 +75,7 @@ const AccountsPage = () => {
                   <Img
                     src="images/img_user_25X25.svg"
                     className="h-[25px] w-[25px]"
-                    alt="user"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-indigo_600 text-left w-[auto]"
@@ -94,7 +94,7 @@ const AccountsPage = () => {
                   <Img
                     src="images/img_map.svg"
                     className="h-[25px] w-[25px]"
-                    alt="map"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -114,7 +114,7 @@ const AccountsPage = () => {
                   <Img
                     src="images/img_file.svg"
                     className="h-[25px] w-[25px]"
-                    alt="file"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -134,7 +134,7 @@ const AccountsPage = () => {
                   <Img
                     src="images/img_question.svg"
                     className="h-[25px] w-[25px]"
-                    alt="question"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -155,7 +155,7 @@ const AccountsPage = () => {
                   <Img
                     src="images/img_settings.svg"
                     className="h-[25px] w-[25px]"
-                    alt="settings"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -217,11 +217,7 @@ const AccountsPage = () => {
               
              Logout
             </Button>
-            <Img
-              src="images/img_ellipse1.png"
-              className="h-[60px] md:h-[auto] sm:h-[auto] md:ml-[0] sm:ml-[0] ml-[35px] rounded-radius50 w-[60px]"
-              alt="EllipseOne"
-            />
+            
           </div>
           <div className="flex flex-col items-center justify-start md:w-[100%] sm:w-[100%] w-[94%]">
             <div className="flex md:flex-col sm:flex-col flex-row md:gap-[30px] sm:gap-[30px] items-center justify-between w-[100%]">
@@ -241,7 +237,7 @@ const AccountsPage = () => {
                   <Img
                     src="images/img_clock_70X70.svg"
                     className="h-[30px] w-[30px]"
-                    alt="clock"
+                    onError={i=>i.target.style.display='none'}
                   />
                 </Button>
                 <div className="flex flex-col gap-[7px] items-start justify-start mr-[15px] w-[45%]">
@@ -269,7 +265,7 @@ const AccountsPage = () => {
                   <Img
                     src="images/img_clock_70X70.svg"
                     className="h-[30px] w-[30px]"
-                    alt="clock"
+                    onError={i=>i.target.style.display='none'}
                   />
                 </Button>
                 <div className="flex flex-col gap-[7px] items-start justify-start mr-[15px] w-[45%]">
@@ -297,7 +293,7 @@ const AccountsPage = () => {
                   <Img
                     src="images/img_clock_70X70.svg"
                     className="h-[30px] w-[30px]"
-                    alt="clock"
+                    onError={i=>i.target.style.display='none'}
                   />
                 </Button>
                 <div className="flex flex-col gap-[7px] items-start justify-start mr-[15px] w-[45%]">
@@ -344,7 +340,7 @@ const AccountsPage = () => {
                       <Img
                         src="images/img_alarm.svg"
                         className="h-[27px] w-[27px]"
-                        alt="alarm"
+                        onError={i=>i.target.style.display='none'}
                       />
                     </Button>
                     <div className="flex flex-col gap-[7px] items-start justify-start md:ml-[0] sm:ml-[0] ml-[25px] md:w-[100%] sm:w-[100%] w-[24%]">
@@ -396,7 +392,7 @@ const AccountsPage = () => {
                       <Img
                         src="images/img_group327.svg"
                         className="h-[25px] w-[25px]"
-                        alt="Group327"
+                        onError={i=>i.target.style.display='none'}
                       />
                     </Button>
                     <div className="flex flex-col gap-[7px] items-start justify-start md:ml-[0] sm:ml-[0] ml-[25px] md:w-[100%] sm:w-[100%] w-[18%]">
@@ -448,7 +444,7 @@ const AccountsPage = () => {
                       <Img
                         src="images/img_group326.svg"
                         className="h-[25px] w-[25px]"
-                        alt="Group326"
+                        onError={i=>i.target.style.display='none'}
                       />
                     </Button>
                     <div className="flex flex-col gap-[7px] items-start justify-start md:ml-[0] sm:ml-[0] ml-[25px] md:w-[100%] sm:w-[100%] w-[16%]">
@@ -532,7 +528,7 @@ const AccountsPage = () => {
                         <Img
                           src="images/img_chipcard.png"
                           className="h-[34px] md:h-[auto] sm:h-[auto] object-cover w-[34px]"
-                          alt="ChipCard"
+                          onError={i=>i.target.style.display='none'}
                         />
                       </div>
                       <div className="flex flex-row gap-[59px] items-center justify-start md:w-[100%] sm:w-[100%] w-[77%]">
@@ -575,7 +571,7 @@ const AccountsPage = () => {
                         <Img
                           src="images/img_contrast.svg"
                           className="ml-[35px] my-[auto]"
-                          alt="contrast"
+                          onError={i=>i.target.style.display='none'}
                         />
                       }
                       shape="CustomBorderBL25"
@@ -727,7 +723,7 @@ const AccountsPage = () => {
                       <Img
                         src="images/img_refresh.svg"
                         className="h-[25px] w-[25px]"
-                        alt="refresh"
+                        onError={i=>i.target.style.display='none'}
                       />
                     </Button>
                     <div className="flex flex-col gap-[7px] items-start justify-start ml-[20px] w-[31%]">
@@ -761,7 +757,7 @@ const AccountsPage = () => {
                       <Img
                         src="images/img_group326.svg"
                         className="h-[25px] w-[25px]"
-                        alt="Group934"
+                        onError={i=>i.target.style.display='none'}
                       />
                     </Button>
                     <div className="flex flex-col gap-[7px] items-start justify-start ml-[20px] w-[27%]">
@@ -795,7 +791,7 @@ const AccountsPage = () => {
                       <Img
                         src="images/img_volume.svg"
                         className="h-[25px] w-[25px]"
-                        alt="volume"
+                        onError={i=>i.target.style.display='none'}
                       />
                     </Button>
                     <div className="flex flex-col gap-[7px] items-start justify-start ml-[20px] w-[30%]">
@@ -829,7 +825,7 @@ const AccountsPage = () => {
                       <Img
                         src="images/img_group326.svg"
                         className="h-[25px] w-[25px]"
-                        alt="Group936"
+                        onError={i=>i.target.style.display='none'}
                       />
                     </Button>
                     <div className="flex flex-col gap-[7px] items-start justify-start ml-[20px] w-[30%]">

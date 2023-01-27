@@ -15,9 +15,10 @@ const MainDashboardPage = () => {
         <aside className="md:hidden sm:hidden md:pl-[20px] sm:pl-[20px] md:pr-[20px] sm:pr-[20px] w-[18%]">
           <div className="flex flex-col gap-[50px] items-center justify-start mb-[364px] mt-[30px] w-[100%]">
           <Img
+          
                 src="images/img_logo_indigo_600.png"
                 className="h-[40px] md:h-[auto] sm:h-[auto] object-cover w-[40px]"
-                alt="LOGO"
+                onError={i=>i.target.style.display='none'}
               />
               <Text
                 className="font-bold ml-[4px] text-indigo_600 text-left w-[auto]"
@@ -35,7 +36,7 @@ const MainDashboardPage = () => {
                   <Img
                     src="images/img_home.svg"
                     className="h-[25px] w-[25px]"
-                    alt="home"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-indigo_600 text-left w-[auto]"
@@ -54,7 +55,7 @@ const MainDashboardPage = () => {
                   <Img
                     src="images/img_glyph.svg"
                     className="h-[25px] w-[25px]"
-                    alt="Glyph"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -73,7 +74,7 @@ const MainDashboardPage = () => {
                   <Img
                     src="images/img_user.svg"
                     className="h-[25px] w-[25px]"
-                    alt="user"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -92,7 +93,7 @@ const MainDashboardPage = () => {
                   <Img
                     src="images/img_map.svg"
                     className="h-[25px] w-[25px]"
-                    alt="map"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -111,7 +112,7 @@ const MainDashboardPage = () => {
                   <Img
                     src="images/img_file.svg"
                     className="h-[25px] w-[25px]"
-                    alt="file"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -130,7 +131,7 @@ const MainDashboardPage = () => {
                   <Img
                     src="images/img_question.svg"
                     className="h-[25px] w-[25px]"
-                    alt="question"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -151,7 +152,7 @@ const MainDashboardPage = () => {
                   <Img
                     src="images/img_settings.svg"
                     className="h-[25px] w-[25px]"
-                    alt="settings"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -213,11 +214,7 @@ const MainDashboardPage = () => {
               
              Logout
             </Button>
-            <Img
-              src="images/img_ellipse1.png"
-              className="h-[60px] md:h-[auto] sm:h-[auto] md:ml-[0] sm:ml-[0] ml-[35px] rounded-radius50 w-[60px]"
-              alt="EllipseOne"
-            />
+            
           </div>
           <div className="flex flex-col gap-[24px] items-center justify-start md:w-[100%] sm:w-[100%] w-[94%]">
             <div className="flex md:flex-col sm:flex-col flex-row md:gap-[30px] sm:gap-[30px] items-center justify-between w-[100%]">
@@ -254,9 +251,10 @@ const MainDashboardPage = () => {
                             </Text>
                           </div>
                           <Img
-                            src="images/img_chipcard.png"
+                            src="images/img_chipcar.png"
                             className="h-[34px] md:h-[auto] sm:h-[auto] object-cover w-[34px]"
-                            alt="ChipCard One"
+                            onError={i=>i.target.style.display='none'}
+                            
                           />
                         </div>
                         <div className="flex flex-row gap-[59px] items-center justify-start md:ml-[0] sm:ml-[0] ml-[2px] md:w-[100%] sm:w-[100%] w-[76%]">
@@ -299,7 +297,7 @@ const MainDashboardPage = () => {
                           <Img
                             src="images/img_contrast.svg"
                             className="ml-[35px] my-[auto]"
-                            alt="contrast"
+                            onError={i=>i.target.style.display='none'}
                           />
                         }
                         shape="CustomBorderBL25"
@@ -332,7 +330,7 @@ const MainDashboardPage = () => {
                       <Img
                         src="images/img_link.svg"
                         className="h-[28px] w-[28px]"
-                        alt="link"
+                        onError={i=>i.target.style.display='none'}
                       />
                     </Button>
                     <div className="flex flex-col gap-[10px] items-center justify-start ml-[17px] w-[40%]">
@@ -368,7 +366,7 @@ const MainDashboardPage = () => {
                       <Img
                         src="images/img_clock.svg"
                         className="h-[28px] w-[28px]"
-                        alt="clock"
+                        onError={i=>i.target.style.display='none'}
                       />
                     </Button>
                     <div className="flex flex-col gap-[7px] items-start justify-start ml-[17px] w-[39%]">
@@ -471,7 +469,7 @@ const MainDashboardPage = () => {
                         <Img
                           src="images/img_group899.svg"
                           className="h-[186px] w-[95%]"
-                          alt="Group899"
+                          onError={i=>i.target.style.display='none'}
                         />
                       </div>
                       <div className="flex sm:flex-col flex-row sm:gap-[20px] items-center justify-end ml-[auto] md:w-[100%] sm:w-[100%] w-[84%]">
@@ -627,7 +625,7 @@ const MainDashboardPage = () => {
                         <Img
                           src="images/img_ellipse18.png"
                           className="h-[70px] md:h-[auto] sm:h-[auto] rounded-radius50 w-[70px]"
-                          alt="EllipseEighteen"
+                          onError={i=>i.target.style.display='none'}
                         />
                         <div className="flex flex-col items-center justify-start w-[100%]">
                           <Text
@@ -643,7 +641,7 @@ const MainDashboardPage = () => {
                         <Img
                           src="images/img_ellipse19.png"
                           className="h-[70px] md:h-[auto] sm:h-[auto] rounded-radius50 w-[70px]"
-                          alt="EllipseNineteen"
+                          onError={i=>i.target.style.display='none'}
                         />
                         <div className="flex flex-col items-center justify-start w-[100%]">
                           <Text
@@ -659,7 +657,7 @@ const MainDashboardPage = () => {
                         <Img
                           src="images/img_ellipse17.png"
                           className="h-[70px] md:h-[auto] sm:h-[auto] rounded-radius50 w-[70px]"
-                          alt="EllipseSeventeen"
+                          onError={i=>i.target.style.display='none'}
                         />
                         <div className="flex flex-col items-center justify-start w-[100%]">
                           <Text
@@ -692,7 +690,7 @@ const MainDashboardPage = () => {
                   <Img
                     src="images/img_group.svg"
                     className="h-[185px] ml-[auto] mr-[5px] mt-[15px] w-[87%]"
-                    alt="Group"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Stack className="absolute h-[216px] inset-[0] justify-center m-[auto] sm:w-[100%] w-[93%]">
                     <div className="absolute flex flex-col items-start justify-start left-[0] pl-[3px] top-[0] w-[8%]">
@@ -746,7 +744,7 @@ const MainDashboardPage = () => {
                       <Img
                         src="images/img_vector.png"
                         className="h-[177px] sm:h-[auto] object-cover w-[100%]"
-                        alt="Vector Five"
+                        onError={i=>i.target.style.display='none'}
                       />
                       <div className="flex flex-col items-center justify-start mt-[4px] md:w-[100%] sm:w-[100%] w-[91%]">
                         <div className="flex flex-col items-start justify-start w-[100%]">
@@ -754,32 +752,32 @@ const MainDashboardPage = () => {
                             <Img
                               src="images/img_group_bluegray_400.svg"
                               className="h-[4px] w-[1%]"
-                              alt="Group One"
+                              onError={i=>i.target.style.display='none'}
                             />
                             <Img
                               src="images/img_group_bluegray_400.svg"
                               className="h-[4px] sm:ml-[0] ml-[78px] w-[1%]"
-                              alt="Group Two"
+                              onError={i=>i.target.style.display='none'}
                             />
                             <Img
                               src="images/img_group_bluegray_400.svg"
                               className="h-[4px] sm:ml-[0] ml-[78px] w-[1%]"
-                              alt="Group Three"
+                              onError={i=>i.target.style.display='none'}
                             />
                             <Img
                               src="images/img_group_bluegray_400.svg"
                               className="h-[4px] sm:ml-[0] ml-[78px] w-[1%]"
-                              alt="Group Four"
+                              onError={i=>i.target.style.display='none'}
                             />
                             <Img
                               src="images/img_group_bluegray_400.svg"
                               className="h-[4px] sm:ml-[0] ml-[79px] w-[1%]"
-                              alt="Group Five"
+                              onError={i=>i.target.style.display='none'}
                             />
                             <Img
                               src="images/img_group_bluegray_400.svg"
                               className="h-[4px] sm:ml-[0] ml-[78px] w-[1%]"
-                              alt="Group Six"
+                              onError={i=>i.target.style.display='none'}
                             />
                             <Img
                               src="images/img_group_bluegray_400.svg"

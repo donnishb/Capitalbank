@@ -17,7 +17,7 @@ const ServicesPage = () => {
               <Img
                 src="images/img_logo_indigo_600.png"
                 className="h-[40px] md:h-[auto] sm:h-[auto] object-cover w-[40px]"
-                alt="LOGO"
+                onError={i=>i.target.style.display='none'}
               />
               <Text
                 className="font-bold ml-[4px] text-indigo_600 text-left w-[auto]"
@@ -47,7 +47,7 @@ const ServicesPage = () => {
                   <Img
                     src="images/img_signal.svg"
                     className="h-[25px] w-[25px]"
-                    alt="call"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-indigo_600 text-left w-[auto]"
@@ -85,7 +85,7 @@ const ServicesPage = () => {
               <Img
                 src="images/img_notification.svg"
                 className="h-[25px] w-[25px]"
-                alt="notification"
+                onError={i=>i.target.style.display='none'}
               />
             </Button>
             
@@ -105,7 +105,7 @@ const ServicesPage = () => {
                     <Img
                       src="images/img_checkmark.svg"
                       className="h-[30px] w-[30px]"
-                      alt="location"
+                      onError={i=>i.target.style.display='none'}
                     />
                   </Button>
                   <div className="flex flex-col gap-[8px] items-start justify-start w-[64%]">
@@ -135,7 +135,7 @@ const ServicesPage = () => {
                     <Img
                       src="images/img_bag_70X70.svg"
                       className="h-[30px] w-[30px]"
-                      alt="bag"
+                      onError={i=>i.target.style.display='none'}
                     />
                   </Button>
                   <div className="flex flex-col gap-[8px] items-start justify-start w-[60%]">
@@ -165,7 +165,7 @@ const ServicesPage = () => {
                     <Img
                       src="images/img_bag_70X70.svg"
                       className="h-[30px] w-[30px]"
-                      alt="checkmark"
+                      onError={i=>i.target.style.display='none'}
                     />
                   </Button>
                   <div className="flex flex-col gap-[8px] items-start justify-start w-[61%]">

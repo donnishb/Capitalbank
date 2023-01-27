@@ -29,7 +29,7 @@ const SettingEditProfilePage = () => {
               <Img
                 src="images/img_logo_indigo_600.png"
                 className="h-[40px] md:h-[auto] sm:h-[auto] object-cover w-[40px]"
-                alt="LOGO"
+                onError={i=>i.target.style.display='none'}
               />
               <Text
                 className="font-bold ml-[4px] text-indigo_600 text-left w-[auto]"
@@ -48,7 +48,7 @@ const SettingEditProfilePage = () => {
                   <Img
                     src="images/img_home_25X25.svg"
                     className="h-[25px] w-[25px]"
-                    alt="home"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -67,7 +67,7 @@ const SettingEditProfilePage = () => {
                   <Img
                     src="images/img_glyph.svg"
                     className="h-[25px] w-[25px]"
-                    alt="Glyph"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -86,7 +86,7 @@ const SettingEditProfilePage = () => {
                   <Img
                     src="images/img_user.svg"
                     className="h-[25px] w-[25px]"
-                    alt="user"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -103,7 +103,7 @@ const SettingEditProfilePage = () => {
                   <Img
                     src="images/img_upload.svg"
                     className="h-[25px] w-[25px]"
-                    alt="upload"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400  text-left w-[auto]"
@@ -122,7 +122,7 @@ const SettingEditProfilePage = () => {
                   <Img
                     src="images/img_file.svg"
                     className="h-[25px] w-[25px]"
-                    alt="file"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -141,7 +141,7 @@ const SettingEditProfilePage = () => {
                   <Img
                     src="images/img_question.svg"
                     className="h-[25px] w-[25px]"
-                    alt="question"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-bluegray_400 text-left w-[auto]"
@@ -161,7 +161,7 @@ const SettingEditProfilePage = () => {
                   <Img
                     src="images/img_settings.svg"
                     className="h-[25px] w-[25px]"
-                    alt="settings"
+                    onError={i=>i.target.style.display='none'}
                   />
                   <Text
                     className="font-medium text-indigo_600 text-left w-[auto]"
@@ -223,11 +223,7 @@ const SettingEditProfilePage = () => {
               
              Logout
             </Button>
-            <Img
-              src="images/img_ellipse1.png"
-              className="h-[60px] md:h-[auto] sm:h-[auto] md:ml-[0] sm:ml-[0] ml-[35px] rounded-radius50 w-[60px]"
-              alt="EllipseOne"
-            />
+            
           </div>
           <div className="bg-white_A700 flex flex-col gap-[52px] items-center justify-end p-[30px] sm:px-[20px] rounded-radius25 md:w-[100%] sm:w-[100%] w-[94%]">
             <div className="flex flex-col items-start justify-start mt-[7px] w-[100%]">
@@ -260,11 +256,7 @@ const SettingEditProfilePage = () => {
             </div>
             <div className="flex md:flex-col sm:flex-col flex-row md:gap-[53px] sm:gap-[53px] items-start justify-between w-[100%]">
               <Stack className="h-[130px] md:mt-[0] sm:mt-[0] mt-[3px] relative md:w-[100%] sm:w-[100%] w-[13%]">
-                <Img
-                  src="images/img_ellipse1.png"
-                  className="absolute h-[130px] inset-[0] justify-center m-[auto] rounded-radius50 w-[130px]"
-                  alt="EllipseTwentyEight"
-                />
+                
                 
               </Stack>
               <div className="flex flex-col items-start justify-start md:w-[100%] sm:w-[100%] w-[83%]">
@@ -308,7 +300,7 @@ const SettingEditProfilePage = () => {
                       className="font-normal leading-[normal] not-italic p-[0] text-[15px] placeholder:text-bluegray_900 text-bluegray_900 text-left w-[100%]"
                       wrapClassName="w-[100%]"
                       name="email One"
-                      placeholder="charlenereed@gmail.com "
+                      placeholder="Jerniferharwell@gmail.com"
                     ></Input>
                   </div>
                   <div className="flex flex-col gap-[11px] items-start justify-start rounded-radius15 w-[100%]">
@@ -346,7 +338,7 @@ const SettingEditProfilePage = () => {
                         <Img
                           src="images/img_arrowright_bluegray_400.svg"
                           className="h-[6px] mr-[25px] sm:h-[auto] w-[3%]"
-                          alt="arrow_down"
+                          onError={i=>i.target.style.display='none'}
                         />
                       }
                     ></SelectBox>
