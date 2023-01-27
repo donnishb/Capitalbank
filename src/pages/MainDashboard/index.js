@@ -7,7 +7,6 @@ import NavBar1 from "components/Navbar1.jsx";
 
 const MainDashboardPage = () => {
   const navigate = useNavigate();
-    const [navbar, setNavbar] = useState(false);
   const [inputvalue, setInputvalue] = React.useState("");
 
   return (

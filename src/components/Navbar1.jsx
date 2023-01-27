@@ -78,7 +78,6 @@ export default function NavBar1() {
                             </li>
                             <li className="text-white hover:text-indigo-200">
                             <button onClick={()=>{setisSignedIn(true); navigate("/loan")}}>Loans</button>
-                                <a href=""></a>
                             </li>
                             <li className="text-white hover:text-indigo-200">
                             <button onClick={()=>{setisSignedIn(true); navigate("/profile")}}>Profile</button>

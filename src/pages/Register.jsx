@@ -409,9 +409,7 @@ function Register() {
     </div>
 
 
-    <div class="md:block hidden w-1/2">
-      <img class="rounded-2xl" src="" />
-    </div>  
+   
    
    
     </div> );

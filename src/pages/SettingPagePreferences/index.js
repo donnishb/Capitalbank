@@ -1,7 +1,6 @@
 import React from "react";
 
 import {  Text, Input, Img, Button, Line, Switch } from "components";
-import Sidebar from "components/Sidebar";
 import { CloseSVG } from "../../assets/images/index.js";
 import { useNavigate } from "react-router-dom";
 
