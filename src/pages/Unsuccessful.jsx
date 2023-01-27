@@ -80,7 +80,7 @@ const CreditCardsPage = () => {
                   as="h3"
                   variant="h3"
                 >
-                  Maintenance
+                  Transaction unsuccessful
                 </Text>
                 <div className="bg-white_A700 flex flex-col items-start justify-start p-[27px] sm:px-[20px] rounded-radius25 w-[100%]">
                   <Text
@@ -88,7 +88,7 @@ const CreditCardsPage = () => {
                     variant="body1"
                     style={{color:"red"}}
                   >
-                    Dear Valued Customer, due to ongoing maintenance, withdrawal services are currently unavailable. We apologize for the inconvenience caused.
+                    Hello, due to too many login attempts your account has been suspended from making transactions at the moment please contact customer support/visit the nearest branch for assistance
                   </Text>
                   
                   
