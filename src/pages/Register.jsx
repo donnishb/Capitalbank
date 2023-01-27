@@ -32,10 +32,10 @@ function Register() {
 
     }
     
-    return ( <div  style={{backgroundImage:"url(images/glass1.jpeg)", backgroundSize:"auto" }}>
-
-
-    <div class="md:w-1/2 px-8 md:px-16 rounded-2xl shadow-lg" style={{width:"50%",margin:"auto",backgroundColor:"white"}}>
+    return ( <div>
+<section class="bg-gray-50 min-h-screen flex items-center justify-center" style={{backgroundImage:"url(images/bank.jpeg)", backgroundSize:"contain"}}>
+<div class="bg-gray-100 flex rounded-2xl shadow-lg max-w-3xl p-5 items-center">
+    <div class="md:w-1/2 px-8 md:px-16 rounded-2xl shadow-lg" >
       <h2 class="font-bold text-2xl text-[#002D74]"><Link to="/">CAPITAL BANK</Link></h2>
       <p class="text-xs mt-4 text-[#002D74]"> SignUp</p>
 
@@ -407,10 +407,10 @@ function Register() {
         <button onClick={()=>{navigate("/signin")}} class="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300" >Login</button>
       </div>
     </div>
-
+    </div>
 
    
-   
+   </section>
    
     </div> );
 }
