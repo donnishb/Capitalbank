@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { Img, Line, Text, Input, Button, List, Stack } from "components";
 import { CloseSVG } from "../../assets/images/index.js";
 import { useNavigate } from "react-router-dom";
