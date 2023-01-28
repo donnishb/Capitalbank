@@ -1,12 +1,10 @@
 import React from "react";
 import { Img, Line, Text, Input, Button, List, Stack } from "components";
-import { CloseSVG } from "../../assets/images/index.js";
 import { useNavigate } from "react-router-dom";
 import NavBar1 from "components/Navbar1.jsx";
 import { useState , useEffect } from "react";
 const MainDashboardPage = () => {
   const navigate = useNavigate();
-  const [inputvalue, setInputvalue] = React.useState("");
   const [onLine,setOnline] = useState(navigator.onLine) 
   useEffect(()=>{
     console.log(onLine)

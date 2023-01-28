@@ -17,7 +17,7 @@ const SettingPagePreferencesPage = () => {
     window.addEventListener('online',handleStatusChange)
     window.addEventListener('offline',handleStatusChange)
    },[onLine])
-  const [inputvalue, setInputvalue] = React.useState("");
+
 
   return ( <>{onLine?(<>
   <NavBar1 />

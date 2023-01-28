@@ -1,6 +1,6 @@
 import React from "react";
 import { useState,useEffect } from "react";
-import {  Text, Input, Img, Button, Line, Switch } from "components";
+import {  Text, Img, Button, Line, Switch } from "components";
 import NavBar1 from "components/Navbar1";
 import { useNavigate } from "react-router-dom";
 
@@ -17,7 +17,7 @@ const SettingPageSecurityPage = () => {
     window.addEventListener('online',handleStatusChange)
     window.addEventListener('offline',handleStatusChange)
    },[onLine])
-  const [inputvalue, setInputvalue] = React.useState("");
+ 
 
   return ( <>{onLine?( <>
   <NavBar1 />
