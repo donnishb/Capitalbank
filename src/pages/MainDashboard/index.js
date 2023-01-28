@@ -179,7 +179,10 @@ const MainDashboardPage = () => {
               as="h1"
               variant="h1"
             >
-              Dashboard
+             <h1> <div className="mb-5"> Dashboard </div> </h1>
+               <Line className="bg-indigo_600 h-[3px] rounded-bl-[0] rounded-br-[0] rounded-tl-[10px] rounded-tr-[10px] w-[100%]" />
+                    <h3>Welcome, Jennifer</h3>
+               <Line className="bg-indigo_600 h-[3px] rounded-bl-[0] rounded-br-[0] rounded-tl-[10px] rounded-tr-[10px] w-[100%]" />
             </Text>
             
           </div>
