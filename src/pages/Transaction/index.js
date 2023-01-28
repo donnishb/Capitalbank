@@ -1,13 +1,14 @@
 import React from "react";
 import NavBar1 from "components/Navbar1.jsx";
-import { Img, Text, Line, Input, Button, Slider, List } from "components";
-import { CloseSVG } from "../../assets/images/index.js";
+import { Img, Text, Line,  Button, Slider, List } from "components";
+
 import { useNavigate } from "react-router-dom";
 import { useState,useEffect } from "react";
+import Card from "components/Card.jsx";
 const TransactionPage = () => {
   const navigate = useNavigate();
    
-  const [inputvalue, setInputvalue] = React.useState("");
+
   const sliderRef = React.useRef();
   const [sliderState, setsliderState] = React.useState(0);
   const [onLine,setOnline] = useState(navigator.onLine) 
@@ -188,46 +189,7 @@ const TransactionPage = () => {
             >
               Transactions
             </Text>
-            <Input
-              value={inputvalue}
-              onChange={(e) => setInputvalue(e?.target?.value)}
-              className="font-normal leading-[normal] not-italic p-[0] text-[15px] placeholder:text-bluegray_400 text-bluegray_400 text-left w-[100%]"
-              wrapClassName="flex md:ml-[0] md:mt-[0] md:w-[100%] ml-[424px] my-[5px] sm:mt-[0] sm:mx-[0] sm:w-[100%] w-[23%]"
-              name="GroupEight"
-              placeholder=""
-              style={{visibility:"hidden"}}
-              suffix={
-                inputvalue?.length > 0 ? (
-                  <CloseSVG
-                    color="#888ea2"
-                    className="cursor-pointer ml-[10px] mr-[22px] my-[auto]"
-                    onClick={() => setInputvalue("")}
-                  />
-                ) : (
-                  ""
-                )
-              }
-              shape="srcCircleBorder25"
-              size="smSrc"
-              variant="srcFillGray101"
-            ></Input>
-            <Button
-              className="flex h-[50px] items-center justify-center md:ml-[0] sm:ml-[0] ml-[30px] md:mt-[0] sm:mt-[0] my-[5px] rounded-radius50 w-[50px]"
-              size="mdIcn"
-              variant="icbFillGray102"
-            >
-              
-            </Button>
-            <Button
-              style={{color:"red"}}
-              className="flex h-[50px] items-center justify-center md:ml-[0] sm:ml-[0] ml-[30px] md:mt-[0] sm:mt-[0] my-[5px] rounded-radius50 w-[50px]"
-              size="mdIcn"
-              variant="icbFillGray102"
-              onClick={()=>{navigate("/")}}
-            >
-              
-             Logout
-            </Button>
+            
             
           </div>
           <div className="flex flex-col gap-[24px] items-center justify-start md:w-[100%] sm:w-[100%] w-[94%]">
@@ -244,81 +206,7 @@ const TransactionPage = () => {
                     </Text>
                     
                   </div>
-                  <div className="flex md:flex-col sm:flex-col flex-row md:gap-[30px] sm:gap-[30px] items-center justify-between w-[100%]">
-                    <div className="bg-indigo_600 flex flex-col gap-[33px] items-center justify-end pt-[24px] rounded-radius25 md:w-[100%] sm:w-[100%] w-[48%]">
-                      <div className="flex flex-col gap-[28px] items-start justify-start md:w-[100%] sm:w-[100%] w-[87%]">
-                        <div className="flex flex-row items-start justify-between w-[100%]">
-                          <div className="flex flex-col items-start justify-start w-[23%]">
-                            <Text
-                              className="not-italic text-left text-white_A700 w-[auto]"
-                              variant="body5"
-                            >
-                              Balance
-                            </Text>
-                            <Text
-                              className="font-normal mt-[4px] not-italic text-left text-white_A700 w-[auto]"
-                              as="h4"
-                              variant="h4"
-                            >
-                              $346,201.00
-                            </Text>
-                          </div>
-                          <Img
-                            src="images/img_chipcard.png"
-                            className="h-[34px] md:h-[auto] sm:h-[auto] object-cover w-[34px]"
-                            onError={i=>i.target.style.display='none'}
-                          />
-                        </div>
-                        <div className="flex flex-row gap-[59px] items-center justify-start md:ml-[0] sm:ml-[0] ml-[2px] md:w-[100%] sm:w-[100%] w-[76%]">
-                          <div className="flex flex-col items-start justify-start w-[44%]">
-                            <Text
-                              className="not-italic text-left text-white_A700_b2 w-[auto]"
-                              variant="body5"
-                            >
-                              CARD HOLDER
-                            </Text>
-                            <Text
-                              className="font-normal mt-[4px] not-italic text-left text-white_A700 w-[auto]"
-                              variant="body2"
-                            >
-                              Jennifer Harwell
-                            </Text>
-                          </div>
-                          <div className="flex flex-col items-start justify-start w-[33%]">
-                            <Text
-                              className="not-italic text-left text-white_A700_b2 w-[auto]"
-                              variant="body5"
-                            >
-                              VALID THRU
-                            </Text>
-                            <Text
-                              className="font-normal mt-[4px] not-italic text-left text-white_A700 w-[auto]"
-                              variant="body2"
-                            >
-                              12/26
-                            </Text>
-                          </div>
-                        </div>
-                      </div>
-                      <Input
-                        className="font-normal leading-[normal] not-italic p-[0] sm:text-[18px] md:text-[20px] text-[22px] text-left placeholder:text-white_A700 text-white_A700 w-[100%]"
-                        wrapClassName="flex w-[100%]"
-                        name="Group319"
-                        placeholder="3778 **** **** 1234"
-                        suffix={
-                          <Img
-                            src="images/img_contrast.svg"
-                            className="ml-[35px] my-[auto]"
-                            onError={i=>i.target.style.display='none'}
-                          />
-                        }
-                        shape="CustomBorderBL25"
-                        size="lg"
-                        variant="GradientWhiteA70026WhiteA70026"
-                      ></Input>
-                    </div>
-                    
-                  </div>
+                  <Card />
                 </div>
               </div>
               <div className="flex flex-col gap-[20px] items-start justify-start md:w-[100%] sm:w-[100%] w-[32%]">

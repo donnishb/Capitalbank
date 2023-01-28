@@ -1,7 +1,7 @@
 import React from "react";
 import { useState,useEffect } from "react";
 import {  Text, Input, Img, Button, Line, Switch } from "components";
-import { CloseSVG } from "../../assets/images/index.js";
+import NavBar1 from "components/Navbar1";
 import { useNavigate } from "react-router-dom";
 
 const SettingPagePreferencesPage = () => {
@@ -20,6 +20,7 @@ const SettingPagePreferencesPage = () => {
   const [inputvalue, setInputvalue] = React.useState("");
 
   return ( <>{onLine?(<>
+  <NavBar1 />
     <div className="bg-gray_100 flex flex-col font-inter items-center justify-start mx-[auto] w-[100%]">
       <div className="flex md:flex-col sm:flex-col flex-row md:gap-[20px] sm:gap-[20px] items-start justify-evenly w-[100%]">
       <aside className="md:hidden sm:hidden md:pl-[20px] sm:pl-[20px] md:pr-[20px] sm:pr-[20px] w-[18%]">
@@ -183,27 +184,7 @@ const SettingPagePreferencesPage = () => {
             >
               Services
             </Text>
-            <Input
-              value={inputvalue}
-              onChange={(e) => setInputvalue(e?.target?.value)}
-              className="font-normal leading-[normal] not-italic p-[0] text-[15px] placeholder:text-bluegray_400 text-bluegray_400 text-left w-[100%]"
-              wrapClassName="flex md:ml-[0] md:mt-[0] md:w-[100%] ml-[482px] my-[5px] sm:mt-[0] sm:mx-[0] sm:w-[100%] w-[23%]"
-              name="GroupEight"
-              suffix={
-                inputvalue?.length > 0 ? (
-                  <CloseSVG
-                    color="#888ea2"
-                    className="cursor-pointer ml-[10px] mr-[22px] my-[auto]"
-                    onClick={() => setInputvalue("")}
-                  />
-                ) : (
-                  ""
-                )
-              }
-              shape="srcCircleBorder25"
-              size="smSrc"
-              variant="srcFillGray101"
-            ></Input>
+           
             <Button
               className="flex h-[50px] items-center justify-center md:ml-[0] sm:ml-[0] ml-[30px] md:mt-[0] sm:mt-[0] my-[5px] rounded-radius50 w-[50px]"
               size="mdIcn"

@@ -81,7 +81,9 @@ export default function NavBar1() {
                             </li>
                             <li className="text-white hover:text-indigo-200">
                             <button onClick={()=>{setisSignedIn(true); navigate("/profile")}}>Profile</button>
-                           
+                            </li>
+                            <li className="text-red_700 hover:text-gray-103">
+                            <button onClick={()=>{setisSignedIn(false); navigate("/")}}>Logout</button>
                             </li>
                             
 

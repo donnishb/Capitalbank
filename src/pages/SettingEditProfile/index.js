@@ -11,13 +11,13 @@ import {
   SelectBox,
   List,
 } from "components";
-import { CloseSVG } from "../../assets/images/index.js";
+
 import { useNavigate } from "react-router-dom";
 import { useState,useEffect } from "react";
 
 const SettingEditProfilePage = () => {
   const navigate = useNavigate();
-  const [inputvalue, setInputvalue] = React.useState("");
+ 
   const [onLine,setOnline] = useState(navigator.onLine) 
 
   useEffect(()=>{
@@ -194,35 +194,8 @@ const SettingEditProfilePage = () => {
             >
               Profile
             </Text>
-            <Input
-              value={inputvalue}
-              onChange={(e) => setInputvalue(e?.target?.value)}
-              className="font-normal leading-[normal] not-italic p-[0] text-[15px] placeholder:text-bluegray_400 text-bluegray_400 text-left w-[100%]"
-              wrapClassName="flex md:ml-[0] md:mt-[0] md:w-[100%] ml-[482px] my-[5px] sm:mt-[0] sm:mx-[0] sm:w-[100%] w-[23%]"
-              name="GroupEight"
-              style={{display:"none"}}
-              suffix={
-                inputvalue?.length > 0 ? (
-                  <CloseSVG
-                    color="#888ea2"
-                    className="cursor-pointer ml-[10px] mr-[22px] my-[auto]"
-                    onClick={() => setInputvalue("")}
-                  />
-                ) : (
-                  ""
-                )
-              }
-              shape="srcCircleBorder25"
-              size="smSrc"
-              variant="srcFillGray101"
-            ></Input>
-            <Button
-              className="flex h-[50px] items-center justify-center md:ml-[0] sm:ml-[0] ml-[30px] md:mt-[0] sm:mt-[0] my-[5px] rounded-radius50 w-[50px]"
-              size="mdIcn"
-              variant="icbFillGray102"
-            >
-              
-            </Button>
+            
+            
             <Button
               style={{color:"red"}}
               className="flex h-[50px] items-center justify-center md:ml-[0] sm:ml-[0] ml-[30px] md:mt-[0] sm:mt-[0] my-[5px] rounded-radius50 w-[50px]"
@@ -275,8 +248,8 @@ const SettingEditProfilePage = () => {
                     <Text
                       className="font-normal not-italic text-bluegray_400 text-left w-[auto]"
                       variant="body1"
-                    >onError={i=>i.target.style.display='none'}
-                      Your Name
+                    >
+                      Name
                     </Text>
                     <Input
                       className="font-normal leading-[normal] not-italic p-[0] text-[15px] placeholder:text-bluegray_900 text-bluegray_900 text-left w-[100%]"
