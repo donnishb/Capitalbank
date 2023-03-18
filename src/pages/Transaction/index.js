@@ -273,7 +273,7 @@ const TransactionPage = () => {
                             className="font-normal not-italic text-bluegray_400 text-left w-[auto]"
                             variant="body4"
                           >
-                            Jan
+                            Mar
                           </Text>
                         </div>
                       </div>
@@ -402,7 +402,7 @@ const TransactionPage = () => {
                                   className="font-normal md:ml-[0] sm:ml-[0] ml-[59px] not-italic text-bluegray_900 text-left w-[auto]"
                                   variant="body1"
                                 >
-                                  25 Jan, 12:30 AM
+                                  25 Mar, 12:30 AM
                                 </Text>
                                 <Text
                                   className="font-medium md:ml-[0] sm:ml-[0] ml-[67px] text-left text-red_700 w-[auto]"
@@ -456,7 +456,7 @@ const TransactionPage = () => {
                                   className="font-normal md:ml-[0] sm:ml-[0] ml-[59px] not-italic text-bluegray_900 text-left w-[auto]"
                                   variant="body1"
                                 >
-                                  22 Jan, 10:40 PM
+                                  22 Mar, 10:40 PM
                                 </Text>
                                 <Text
                                   className="font-medium md:ml-[0] sm:ml-[0] ml-[67px] text-green_600 text-left w-[auto]"
@@ -510,7 +510,7 @@ const TransactionPage = () => {
                                   className="font-normal md:ml-[0] sm:ml-[0] ml-[59px] not-italic text-bluegray_900 text-left w-[auto]"
                                   variant="body1"
                                 >
-                                  20 Jan, 12:26 PM
+                                  20 Mar, 12:26 PM
                                 </Text>
                                 <Text
                                   className="font-medium md:ml-[0] sm:ml-[0] ml-[67px] text-left text-red_700 w-[auto]"
@@ -564,7 +564,7 @@ const TransactionPage = () => {
                                   className="font-normal md:ml-[0] sm:ml-[0] ml-[59px] not-italic text-bluegray_900 text-left w-[auto]"
                                   variant="body1"
                                 >
-                                  15 Jan, 03:29 PM
+                                  15 Mar, 03:29 PM
                                 </Text>
                                 <Text
                                   className="font-medium md:ml-[0] sm:ml-[0] ml-[67px] text-left text-red_700 w-[auto]"
@@ -619,7 +619,7 @@ const TransactionPage = () => {
                                     className="font-normal md:ml-[0] sm:ml-[0] ml-[59px] not-italic text-bluegray_900 text-left w-[auto]"
                                     variant="body1"
                                   >
-                                    14 Jan, 10:40 PM
+                                    14 Mar, 10:40 PM
                                   </Text>
                                   <Text
                                     className="font-medium md:ml-[0] sm:ml-[0] ml-[69px] text-green_600 text-left w-[auto]"

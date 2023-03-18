@@ -797,7 +797,7 @@ const MainDashboardPage = () => {
                                   className="font-normal not-italic text-bluegray_400 text-left w-[auto]"
                                   variant="body3"
                                 >
-                                  Jan
+                                  Mar
                                 </Text>
                               </div>
                             </div>
