@@ -315,7 +315,7 @@ const MainDashboardPage = () => {
                             className="font-normal not-italic text-bluegray_400 text-left w-[auto]"
                             variant="body2"
                           >
-                            20 January 2023
+                            20 March 2023
                           </Text>
                           <Text
                             className="font-medium ml-[46px] text-green_600 text-left w-[auto]"
@@ -348,7 +348,7 @@ const MainDashboardPage = () => {
                             className="font-normal not-italic text-bluegray_400 text-left w-[auto]"
                             variant="body2"
                           >
-                            14 January 2023
+                            14 March 2023
                           </Text>
 
                           <Text

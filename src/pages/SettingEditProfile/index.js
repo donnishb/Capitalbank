@@ -313,7 +313,7 @@ const SettingEditProfilePage = () => {
                           className="font-normal leading-[normal] not-italic text-[15px] text-bluegray_900 text-left w-[100%]"
                           placeholderClassName="text-bluegray_900"
                           name="date"
-                          placeholder="25 January 1990"
+                          placeholder="25 March 1990"
                           isSearchable={false}
                           isMulti={false}
                           indicator={
