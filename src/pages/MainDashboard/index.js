@@ -321,7 +321,7 @@ const MainDashboardPage = () => {
                             className="font-medium ml-[46px] text-green_600 text-left w-[auto]"
                             variant="body1"
                           >
-                            +$2,500
+                            +$2,800
                           </Text>
                         </div>
                       </div>
