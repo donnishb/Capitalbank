@@ -315,7 +315,7 @@ const AccountsPage = () => {
                             className="font-normal not-italic text-bluegray_400 text-left w-[auto]"
                             variant="body2"
                           >
-                            27 Mar 2023
+                            14 Mar 2023
                           </Text>
                         </div>
                         <Text
@@ -367,7 +367,7 @@ const AccountsPage = () => {
                             className="font-normal not-italic text-bluegray_400 text-left w-[auto]"
                             variant="body2"
                           >
-                            26 Mar 2023
+                            07 Mar 2023
                           </Text>
                         </div>
                         <Text
@@ -419,7 +419,7 @@ const AccountsPage = () => {
                             className="font-normal not-italic text-bluegray_400 text-left w-[auto]"
                             variant="body2"
                           >
-                            25 Mar 2023
+                            5 Mar 2023
                           </Text>
                         </div>
                         <Text
