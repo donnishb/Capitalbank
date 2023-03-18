@@ -619,7 +619,7 @@ const TransactionPage = () => {
                                     className="font-normal md:ml-[0] sm:ml-[0] ml-[59px] not-italic text-bluegray_900 text-left w-[auto]"
                                     variant="body1"
                                   >
-                                    14 Mar, 10:40 PM
+                                    4 Mar, 10:40 PM
                                   </Text>
                                   <Text
                                     className="font-medium md:ml-[0] sm:ml-[0] ml-[69px] text-green_600 text-left w-[auto]"
