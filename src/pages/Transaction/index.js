@@ -402,7 +402,7 @@ const TransactionPage = () => {
                                   className="font-normal md:ml-[0] sm:ml-[0] ml-[59px] not-italic text-bluegray_900 text-left w-[auto]"
                                   variant="body1"
                                 >
-                                  25 Mar, 12:30 AM
+                                  15 Mar, 12:30 AM
                                 </Text>
                                 <Text
                                   className="font-medium md:ml-[0] sm:ml-[0] ml-[67px] text-left text-red_700 w-[auto]"
@@ -456,7 +456,7 @@ const TransactionPage = () => {
                                   className="font-normal md:ml-[0] sm:ml-[0] ml-[59px] not-italic text-bluegray_900 text-left w-[auto]"
                                   variant="body1"
                                 >
-                                  22 Mar, 10:40 PM
+                                  13 Mar, 10:40 PM
                                 </Text>
                                 <Text
                                   className="font-medium md:ml-[0] sm:ml-[0] ml-[67px] text-green_600 text-left w-[auto]"
@@ -510,7 +510,7 @@ const TransactionPage = () => {
                                   className="font-normal md:ml-[0] sm:ml-[0] ml-[59px] not-italic text-bluegray_900 text-left w-[auto]"
                                   variant="body1"
                                 >
-                                  20 Mar, 12:26 PM
+                                  11 Mar, 12:26 PM
                                 </Text>
                                 <Text
                                   className="font-medium md:ml-[0] sm:ml-[0] ml-[67px] text-left text-red_700 w-[auto]"
@@ -564,7 +564,7 @@ const TransactionPage = () => {
                                   className="font-normal md:ml-[0] sm:ml-[0] ml-[59px] not-italic text-bluegray_900 text-left w-[auto]"
                                   variant="body1"
                                 >
-                                  15 Mar, 03:29 PM
+                                  07 Mar, 03:29 PM
                                 </Text>
                                 <Text
                                   className="font-medium md:ml-[0] sm:ml-[0] ml-[67px] text-left text-red_700 w-[auto]"
